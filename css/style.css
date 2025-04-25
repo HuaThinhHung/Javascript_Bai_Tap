@@ -1,0 +1,95 @@
+/* Reset cơ bản */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+  }
+  
+  /* Gói toàn bộ nội dung vào 1 container */
+  .container {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  /* Tiêu đề chính */
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+  
+  /* Hộp chứa mỗi bài */
+  .box {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-left: 6px solid #3498db;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Icon đầu mỗi bài */
+  .box span {
+    font-size: 24px;
+    margin-right: 8px;
+  }
+  
+  /* Input */
+  input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Button */
+  button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 25px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Kết quả hiển thị */
+  p {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #27ae60;
+  }
+  
+  /* Responsive cho màn hình nhỏ */
+  @media (max-width: 600px) {
+    .box {
+      padding: 15px;
+    }
+  
+    input,
+    button {
+      width: 100%;
+    }
+  }
+  
